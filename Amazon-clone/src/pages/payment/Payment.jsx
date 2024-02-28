@@ -112,7 +112,7 @@ function Payment() {
           <h3>Payment methods</h3>
           <div className={classes.payment__card__container}>
             <div className={classes.payment__details}>
-              <form onSubmit={handlePayment}>
+              <form >
                 {/* error */}
                 {cardError && (
                   <small style={{ color: "red" }}>{cardError}</small>
