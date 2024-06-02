@@ -16,7 +16,8 @@ function CarouselBanner() {
           return <img key={imageItemLink} src={imageItemLink} />;
         })}
       </Carousel>
-      <div className={classes.hero__img}></div>
+      <div className={classes.hero__img}>
+      </div>
     </div>
   );
 }

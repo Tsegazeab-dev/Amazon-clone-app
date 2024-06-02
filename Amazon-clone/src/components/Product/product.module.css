@@ -7,9 +7,9 @@
     position: relative;
    
   }
-  .card__container:hover .button{
+  /* .card__container:hover .button{
     display: block;
-  }
+  } */
   
   .card__container img {
     padding: 10px;
@@ -18,7 +18,7 @@
     object-fit: contain;
   }
   .button {
-    display: none;
+    /* display: none; */
     padding: 5px 10px;
     font-weight: 700;
     border: none;
@@ -28,7 +28,7 @@
     margin: 15px 0;
     border-radius: 30px;
     position: absolute;
-    bottom: 0;
+    bottom: -14px;
     left: 0;
   }
   .button:hover {

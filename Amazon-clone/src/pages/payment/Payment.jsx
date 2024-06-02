@@ -67,7 +67,7 @@ function Payment() {
           created: paymentIntent.created,
         });
       // empty the basket
-      //    dispatch({ type: Type.EMPTY_BASKET });
+         dispatch({ type: "EMPTY_BASKET" });
 
       setProcessing(false);
       navigate("/orders", { state: { msg: "you have placed new Order" } });
@@ -112,7 +112,7 @@ function Payment() {
           <h3>Payment methods</h3>
           <div className={classes.payment__card__container}>
             <div className={classes.payment__details}>
-              <form >
+              <form onSubmit={handlePayment}>
                 {/* error */}
                 {cardError && (
                   <small style={{ color: "red" }}>{cardError}</small>

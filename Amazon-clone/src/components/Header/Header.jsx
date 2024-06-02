@@ -14,6 +14,8 @@ function Header() {
   const totalItem = basket?.reduce((accumulator, item) => {
     return item.quantity + accumulator;
   }, 0);
+
+ 
   return (
     <section className={styles.fixed}>
       <section>

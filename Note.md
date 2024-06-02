@@ -60,3 +60,19 @@
  * to listen the request we listen through firebase `export.api = onRequest(app)`
  * `const { onRequest } = require("firebase-functions/v2/https");` 
  * to start the server we use the script serve from firebase function `npm run serve`
+
+
+
+### Errors faced during class
+* #### Problem #1
+  * When we deploy amazon frontendon netlify and when we navigate to any route different from home page and we refresh the application breaks
+* #### Solution
+  * in the publc folder add a file called `_redirects` with out extension and inside we write `/* /index.html 200` this redirect routes to the index.html file since react is a single page aplication 
+
+* #### Problem #2
+  * when we refresh in the protected routes like `payment` and `order` pages it redirect to the auth page like the user is not logged in.
+
+* #### Solution
+  ???????
+
+  

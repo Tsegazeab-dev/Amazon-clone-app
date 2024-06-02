@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import CurrencyFormatter from '../CurrencyFormatter/CurrencyFormatter';
 import classes from './product.module.css'
 import Rating from '@mui/material/Rating';
@@ -6,6 +6,8 @@ import { DataContext } from '../Context/DataProvider';
 import { Link } from 'react-router-dom';
 
 function ProductCard({product, flag, cart}) {
+ 
+  
 const { image, title, rating, price, id, description } = product;
 
 const [state, dispatch] = useContext(DataContext)
